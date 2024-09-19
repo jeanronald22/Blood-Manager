@@ -8,12 +8,14 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import { Colors } from "../assets/Colors/colors";
+import { StatusBar } from "expo-status-bar";
 
 const Bienvenue = ({ navigation }) => {
   // !--------------------------------- DEFINITION DES STATES ----------------------------------------------------
   const [pressed, setPressed] = useState(false); // permet de verifier si le boutton pressable est enfoncer ou non et appliquer un style en consequnce
   return (
     <View style={styles.container}>
+      <StatusBar style="auto" />
       {/* se composant permet de donner une marge suppérieur au composant pour l'affichage de la status bar */}
       <SafeAreaView />
       <View style={styles.imageContainer}>
